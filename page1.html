@@ -9,6 +9,7 @@
       table-layout: fixed;  /* Use fixed layout to make sure all cells are the same width */
     }
     td {
+      height: 10px;  /* Set a fixed height for all cells */
       border: 1px solid black;  /* Add a border for clarity */
       text-align: center;  /* Center the text */
       vertical-align: middle;  /* Vertically center the text */
@@ -73,10 +74,10 @@
 	
 <p><b>Voici la troisième partie:</b></p>
 <table border=1>
-<tr> <td>un autre tableau</td> <td></td> <td></td> <td></td> </tr>
-<tr> <td rowspan='3'></td> <td></td> <td rowspan='3'></td> <td></td> </tr>
-<tr> <td></td> <td colspan='2'></td> </tr>
-<tr> <td></td> <td></td> </tr>
+<tr> <td colspan='2'>un autre tableau</td> <td colspan='2'></td> <td colspan='2'></td> <td colspan='2'></td> </tr>
+<tr> <td colspan='2' rowspan='3'></td> <td colspan='2'></td> <td colspan='2' rowspan='3'></td> <td colspan='2'></td> </tr>
+<tr> <td colspan='2'></td> <td></td> </tr>
+<tr> <td colspan='2'></td> <td colspan='2'></td> </tr>
 </table>  
 	
 <!-- Excercise 3  -->
