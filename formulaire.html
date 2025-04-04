@@ -4,21 +4,25 @@
 
 </head>
 <body>
-	<h1>Mon formulaire</h1>
+	<h1>Dresseur de pokémon</h1>
 
+<p>Le champs marqués d'une * sont obligatoires.</p>
+	
 <form action="#">
 <fieldset>
-<legend>Votre Nom et Prénom</legend>
-<p>Nom : <input name="A" type="Text" value="Nom ?"/></p>
-<p>Prénom : <input name="B" type="Text" value="Prénom ?"/></p>
-</fieldset>
-<p>Mr <input name="C" type="radio" value="Mr"/> 
-Mme<input name="C" type="radio" value="Mme"/></p>
-<p>
-Chien <input name="D" type="checkbox" value="Chien"/>
-Chat <input name="E" type="checkbox" value="Chat"/>
-Poisson <input name="F" type="checkbox" value="Poisson"/>
-</p>
+<legend>Noveau dresseur</legend>
+<p>Nom * </p>
+<p><input name="A" type="Text" value="Nom"/></p>
+<p>Description<input name="B" type="Text" value="Description"/></p>
+
+<p>Équipe </p>
+<p><input name="C" type="radio" value="Rouge"/> Rouge</p>
+<p><input name="C" type="radio" value="Jaune"/> Jaune</p>
+<p><input name="C" type="radio" value="Bleu"/> Bleu</p>
+
+<p>Anniversaire *</p>
+
+<!-- 
 <p>
 <select name="G" multiple>
 	<option>Pain</option>
@@ -26,15 +30,18 @@ Poisson <input name="F" type="checkbox" value="Poisson"/>
 	<option>Orange</option>
 </select>
 </p>
+-->
 <p>
-<textarea rows="3" cols="30	" name="H">
-Laisez nous un commentaire
+<textarea rows="1" cols="30	" name="H">
+jj/mm/aaaa
 </textarea>
 
 </p>
 <p><input type="submit" value="Envoyer" />
-<input type="reset"/>
+<!-- <input type="reset"/> -->
 </p>
+
+</fieldset>
 
 
 </form>
