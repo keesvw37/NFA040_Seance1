@@ -20,10 +20,45 @@ function afficher(){
 
 }
 
+
+
 </script>
 
 </head>
 <body>
+<!-- 
+
+A for loop in JavaScript (and many other programming languages) has the following general syntax:
+	
+for (initialization; condition; increment) {
+  // Code to execute
+}
+
+i++: The ++ operator increases the value of i by 1 each time the loop executes.
+
+var resultat = "";
+Purpose: This line initializes an empty string, resultat, which will store the final result (a pattern of asterisks *).	
+	
+for (j = 0; j < saisie; j++) {
+Purpose: This is the outer loop, which runs saisie times, controls the number of rows.
+
+for (i = 0; i < saisie; i++) {
+Purpose: This is the inner loop, which also runs saisie times for each iteration of the outer loop.
+
+resultat += "*";
+Purpose: During each iteration of the inner loop, this line adds an asterisk (*) to the resultat string.
+	
+The += operator in JavaScript is called the addition assignment operator. 
+It's a shorthand way to add a value to a variable and assign the result back to that variable.
+
+e.g 
+let x = 5;
+x += 3;  // Equivalent to x = x + 3
+console.log(x);  // Output: 8
+
+resultat += "</br>";
+Purpose: After the inner loop finishes (i.e., one row of asterisks is created), this line adds a line break (</br>) to resultat, so the next row of asterisks will appear on a new line.
+-->
 <h1>Les étoiles</h1>
 <p>Saisir un chiffre : <input id="V1"/></p>
 <button onclick="afficher()">Afficher</button>
