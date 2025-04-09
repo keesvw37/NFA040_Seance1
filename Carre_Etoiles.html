@@ -16,13 +16,13 @@ function afficher1(){
                 resultat += "</br>";
         }
 	
-	document.getElementById('result').innerHTML = resultat;
+	document.getElementById('result1').innerHTML = resultat;
 
 }
 
 function afficher2(){
 	
-	var saisie = parseInt(document.getElementById('V1').value);
+	var saisie = parseInt(document.getElementById('V2').value);
 	var resultat = "";	
 		
 	for (j=0; j<saisie ; j++){
@@ -32,15 +32,13 @@ function afficher2(){
                 resultat += "</br>";
         }
 	
-	document.getElementById('result').innerHTML = resultat;
-
-}
+	document.getElementById('result2').innerHTML = resultat;
 
 }
 
 function afficher3(){
 	
-	var saisie = parseInt(document.getElementById('V1').value);
+	var saisie = parseInt(document.getElementById('V3').value);
 	var resultat = "";	
 		
 	for (j=0; j<saisie ; j++){
@@ -50,7 +48,7 @@ function afficher3(){
                 resultat += "</br>";
         }
 	
-	document.getElementById('result').innerHTML = resultat;
+	document.getElementById('result3').innerHTML = resultat;
 
 }
 
@@ -94,17 +92,17 @@ Purpose: After the inner loop finishes (i.e., one row of asterisks is created), 
 <h1>Les étoiles V1</h1>
 <p>Saisir un chiffre : <input id="V1"/></p>
 <button onclick="afficher1()">Afficher</button>
-<div id="result"></div>
+<div id="result1"></div>
 
 <h1>Les étoiles V2</h1>
-<p>Saisir un chiffre : <input id="V1"/></p>
+<p>Saisir un chiffre : <input id="V2"/></p>
 <button onclick="afficher2()">Afficher</button>
-
+<div id="result2"></div>
 
 <h1>Les étoiles V3</h1>
-<p>Saisir un chiffre : <input id="V1"/></p>
+<p>Saisir un chiffre : <input id="V3"/></p>
 <button onclick="afficher3()">Afficher</button>
-
+<div id="result3"></div>
 
 
 	
