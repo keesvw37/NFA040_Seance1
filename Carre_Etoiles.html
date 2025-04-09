@@ -4,7 +4,23 @@
 <title>Mon Exercice JS N°2</title>
 <script>
 
-function afficher(){
+function afficher1(){
+	
+	var saisie = parseInt(document.getElementById('V1').value);
+	var resultat = "";	
+		
+	for (j=0; j<saisie ; j++){
+        for (i=0; i<saisie ; i++){
+                resultat += "*"; 
+        }
+                resultat += "</br>";
+        }
+	
+	document.getElementById('result').innerHTML = resultat;
+
+}
+
+function afficher2(){
 	
 	var saisie = parseInt(document.getElementById('V1').value);
 	var resultat = "";	
@@ -59,9 +75,16 @@ console.log(x);  // Output: 8
 resultat += "</br>";
 Purpose: After the inner loop finishes (i.e., one row of asterisks is created), this line adds a line break (</br>) to resultat, so the next row of asterisks will appear on a new line.
 -->
-<h1>Les étoiles</h1>
+<h1>Les étoiles V1</h1>
 <p>Saisir un chiffre : <input id="V1"/></p>
-<button onclick="afficher()">Afficher</button>
+<button onclick="afficher1()">Afficher</button>
 <div id="result"></div>
+
+<h1>Les étoiles V2</h1>
+<p>Saisir un chiffre : <input id="V1"/></p>
+<button onclick="afficher2()">Afficher</button>
+<div id="result"></div>
+
+	
 </body>
 </html> 
