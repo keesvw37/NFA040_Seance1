@@ -72,6 +72,26 @@ function afficher4(){
 
 }
 
+function afficher5(){
+	
+	var saisie = parseInt(document.getElementById('V5').value);
+	var resultat = "";	
+		
+	for (j=0; j<saisie ; j++){
+		
+        for (i=0; i<saisie ; i++){
+               if (i == 0 || i == 4 || j == 0 || j == 4) {
+        		resultat += "*";
+	}
+		else {resultat += "o";}
+        }
+                resultat += "</br>";
+        }
+	
+	document.getElementById('result5').innerHTML = resultat;
+
+}
+
 </script>
 
 </head>
@@ -128,6 +148,11 @@ Purpose: After the inner loop finishes (i.e., one row of asterisks is created), 
 <p>Saisir un chiffre : <input id="V4"/></p>
 <button onclick="afficher4()">Afficher</button>
 <div id="result4"></div>
+
+<h1>Les étoiles V5</h1>
+<p>Saisir un chiffre : <input id="V5"/></p>
+<button onclick="afficher5()">Afficher</button>
+<div id="result5"></div>
 	
 </body>
 </html> 
