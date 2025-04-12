@@ -100,6 +100,19 @@ function somme(){
 	resultat = saisie1 + saisie2;
 	document.getElementById('result6').innerHTML = resultat;
         }
+
+function multiply(){
+	
+	var saisie3 = parseInt(document.getElementById('V8').value);
+	var saisie4 = parseInt(document.getElementById('V9').value);
+	var resultat = "";	
+		for (j=1; j<=saisie4 ; j++){
+                resultat = `${saisie3} * ${saisie4} = ${saisie3*saise4}`; 
+                resultat += "</br>";
+        }
+	
+	document.getElementById('result7').innerHTML = resultat;
+        }
 	
 </script>
 
@@ -168,6 +181,12 @@ Purpose: After the inner loop finishes (i.e., one row of asterisks is created), 
 <p>Saisir un chiffre 2: <input id="V7"/></p>
 <button onclick="somme()">Afficher</button>
 <div id="result6"></div>
+
+<h1>La table de multiplication</h1>
+<p>Base de multiplication: <input id="V8"/></p>
+<p>Nombre de ligne: <input id="V9"/></p>
+<button onclick="multiply()">Afficher</button>
+<div id="result7"></div>
 	
 </body>
 </html> 
