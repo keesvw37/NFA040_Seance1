@@ -22,30 +22,30 @@ function controler(){
 function controler1(){
 	if(document.getElementById('image1').checked){
 			function presenter(){
-	document.getElementById('image1').style.display="Block";}
+	document.getElementById('image').style.display="Block";}
 		}
 	else{function cacher(){
-	document.getElementById('image1').style.display="None";}		
+	document.getElementById('image').style.display="None";}		
 }
   }
 
 function controler2(){
 	if(document.getElementById('image1').checked){
 			function presenter(){
-	document.getElementById('image1').style.display="Block";}
+	document.getElementById('image').style.display="Block";}
 		}
 	else{function cacher(){
-	document.getElementById('image1').style.display="None";}		
+	document.getElementById('image').style.display="None";}		
 }
   }
 
 function controler3(){
 	if(document.getElementById('image1').checked){
 			function presenter(){
-	document.getElementById('image1').style.display="Block";}
+	document.getElementById('image').style.display="Block";}
 		}
 	else{function cacher(){
-	document.getElementById('image1').style.display="None";}		
+	document.getElementById('image').style.display="None";}		
 }
   }
 
@@ -56,17 +56,19 @@ function controler3(){
 <h1>Images à afficher</h1>
 <hr/>
 <h2>Image 1</h2>
-<h2>Image 2</h2>
-<h2>Image 3</h2>  
 <p><input type="checkbox" id="image1"></p>
-<button onclick="controler1()">Check</button>
-  <img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
+<button onclick="controler1()"></button>
+  <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
+	
+<h2>Image 2</h2>
 <p><input type="checkbox" id="image2"></p>
-<button onclick="controler2()">Check</button>
-  <img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
+<button onclick="controler2()"></button>
+  <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
+	
+<h2>Image 3</h2>  
 <p><input type="checkbox" id="image3"></p>
-<button onclick="controler3()">Check</button>
-  <img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
+<button onclick="controler3()"></button>
+  <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
 
 </body>
 </html>
