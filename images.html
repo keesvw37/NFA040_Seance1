@@ -3,14 +3,12 @@
 <head>
 <script>
 
-function controler1(){
-	if(document.getElementById('image1').checked){
+function afficher1(){
+	if(document.getElementById('checkbox1').checked){
 	document.getElementById('image').style.display="Block";}
 	else{
 	document.getElementById('image').style.display="None";}		
 }
-
-
 
 </script>
 </head>
@@ -19,21 +17,9 @@ function controler1(){
 <h1>Images à afficher</h1>
 <hr/>
 <h2>Image 1</h2>
-<p><input type="checkbox" id="image1"></p>
-<button onclick="controler1()"></button>
-  
-	
-<h2>Image 2</h2>
-<p><input type="checkbox" id="image2"></p>
-<button onclick="controler2()"></button>
-
-	
-<h2>Image 3</h2>  
-<p><input type="checkbox" id="image3"></p>
-<button onclick="controler3()"></button>
+<p><input type="checkbox" id="checkbox1"></p>
+<button onclick="afficher1()"></button>
 <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
-
-
 
 </body>
 </html>
