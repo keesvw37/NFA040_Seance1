@@ -1,0 +1,72 @@
+<html>
+  <meta charset="UTF-8"/>
+<head>
+<script>
+function affichage(){
+	alert("Tout es OK !");
+}
+function cacher(){
+	document.getElementById('DuTexte').style.display="None";
+}
+function presenter(){
+	document.getElementById('DuTexte').style.display="Block";
+}
+
+function controler(){
+	if(document.getElementById('Control').checked){
+			alert("Bouton option coché");
+		}
+	else{alert("Bouton option NON coché");}		
+}
+
+function controler1(){
+	if(document.getElementById('image1').checked){
+			function presenter(){
+	document.getElementById('image1').style.display="Block";}
+		}
+	else{function cacher(){
+	document.getElementById('image1').style.display="None";}		
+}
+  }
+
+function controler2(){
+	if(document.getElementById('image1').checked){
+			function presenter(){
+	document.getElementById('image1').style.display="Block";}
+		}
+	else{function cacher(){
+	document.getElementById('image1').style.display="None";}		
+}
+  }
+
+function controler3(){
+	if(document.getElementById('image1').checked){
+			function presenter(){
+	document.getElementById('image1').style.display="Block";}
+		}
+	else{function cacher(){
+	document.getElementById('image1').style.display="None";}		
+}
+  }
+
+</script>
+</head>
+<body>
+
+<h1>Images à afficher</h1>
+<hr/>
+<h2>Image 1</h2>
+<h2>Image 2</h2>
+<h2>Image 3</h2>  
+<p><input type="checkbox" id="image1"></p>
+<button onclick="controler1()">Check</button>
+  <img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
+<p><input type="checkbox" id="image2"></p>
+<button onclick="controler2()">Check</button>
+  <img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
+<p><input type="checkbox" id="image3"></p>
+<button onclick="controler3()">Check</button>
+  <img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Cutest_Koala.jpg" /> 
+
+</body>
+</html>
