@@ -92,6 +92,18 @@ function afficher5(){
 
 }
 
+function somme(){
+	
+	var saisie = parseInt(document.getElementById('V6').value);
+	var resultat = "";	
+	resultat = V6 + V7;
+        }
+	
+	document.getElementById('result6').innerHTML = resultat;
+
+}
+
+
 </script>
 
 </head>
@@ -153,6 +165,12 @@ Purpose: After the inner loop finishes (i.e., one row of asterisks is created), 
 <p>Saisir un chiffre : <input id="V5"/></p>
 <button onclick="afficher5()">Afficher</button>
 <div id="result5"></div>
+
+<h1>Somme de 2 valeurs</h1>
+<p>Saisir un chiffre 1: <input id="V6"/></p>
+<p>Saisir un chiffre 2: <input id="V7"/></p>
+<button onclick="somme()">Afficher</button>
+<div id="result6"></div>
 	
 </body>
 </html> 
