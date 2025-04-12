@@ -107,7 +107,7 @@ function multiply(){
 	var saisie4 = parseInt(document.getElementById('V9').value);
 	var resultat = "";	
 		for (j=1; j<=saisie4 ; j++){
-                resultat = `${saisie3} * ${saisie4} = ${saisie3*saisie4}`; 
+                resultat += `${saisie3} * ${saisie4} = ${saisie3*saisie4}`;
                 resultat += "</br>"; }
 	document.getElementById('result7').innerHTML = resultat;
  	}
@@ -149,6 +149,8 @@ console.log(x);  // Output: 8
 
 resultat += "</br>";
 Purpose: After the inner loop finishes (i.e., one row of asterisks is created), this line adds a line break (</br>) to resultat, so the next row of asterisks will appear on a new line.
+ 
+	resultat = `${saisie3} * ${saisie4} = ${saisie3*saisie4}`; 
 -->
 <h1>Les étoiles V1</h1>
 <p>Saisir un chiffre : <input id="V1"/></p>
