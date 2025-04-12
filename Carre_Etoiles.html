@@ -107,12 +107,12 @@ function multiply(){
 	var saisie4 = parseInt(document.getElementById('V9').value);
 	var resultat = "";	
 		for (j=1; j<=saisie4 ; j++){
-                resultat += `${j} * ${saisie4} = ${j*saisie4}`;
+                resultat += `${j} * ${saisie4} = ${j*saisie4}`; // can also use: resultat += saisie4 + " * " + j + " = " + (saisie4*j) + "</br>";    
                 resultat += "</br>"; }
 	document.getElementById('result7').innerHTML = resultat;
  	}
 	
-	
+
 </script>
 
 </head>
@@ -132,6 +132,7 @@ Purpose: This line initializes an empty string, resultat, which will store the f
 	
 for (j = 0; j < saisie; j++) {
 Purpose: This is the outer loop, which runs saisie times, controls the number of rows.
+*The loop will continue to run as long as j < saisie
 
 for (i = 0; i < saisie; i++) {
 Purpose: This is the inner loop, which also runs saisie times for each iteration of the outer loop.
