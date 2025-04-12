@@ -80,7 +80,7 @@ function afficher5(){
 	for (j=0; j<saisie ; j++){
 		
         for (i=0; i<saisie ; i++){
-               if (i == 0 || i == 4 || j == 0 || j == 4) {
+               if (i == 0 || i == saisie-1 || j == 0 || j == saisie-1) {
         		resultat += "*";
 	}
 		else {resultat += "o";}
