@@ -7,7 +7,6 @@ function lancer(){
 	else{alert("Gagné");}
 }
 function chambre(num){
-	let userMSG = "chambre: " + num ;
 	let x = 0
 // 	  for (let i = 1; i <= 6; i++) {
 // document.getElementById("Br" + i).style.fill="gray";
@@ -17,11 +16,11 @@ for (let i = 1; i <= 6 ; i++) {
 	{ x++ ;} 
 } 
 if (x < 3) {
-document.getElementById("Br" + num).style.fill="red"; }
-	else {alert("Max choix = 3");} 
-	
-userMSG += " , Nombre des chambres choisi: " + x ;
+document.getElementById("Br" + num).style.fill="red"; 
+let userMSG = "chambre: " + num + " , Nombre des chambres choisi: " + x ;
 alert(userMSG) ;
+	}	else {alert("Max choix = 3");} 
+	
 }
 
 </script>
