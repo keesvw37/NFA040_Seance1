@@ -2,19 +2,23 @@
 <head>
 <script>
 function lancer(){
-	  var Val = Math.floor((Math.random() * 6)+1);
+	var Val = Math.floor((Math.random() * 6)+1);
 	if(document.getElementById("Br"+Val).style.fill=="red"){alert("Perdu");}
 	else{alert("Gagné");}
 }
 function chambre(num){
           alert("chambre: " + num) ;
-	  for (let i = 1; i <= 6; i++) {
-document.getElementById("Br" + i).style.fill="gray";
+// 	  for (let i = 1; i <= 6; i++) {
+// document.getElementById("Br" + i).style.fill="gray";
+// }
+for (let i = 1, x=0; i <= 6 || x < 3; i++) {
+	if(document.getElementById("Br"+i).style.fill=="red";) 
+	{ x++ ;} 
+} 
+if (x < 3) {
+document.getElementById("Br" + num).style.fill="red"; }
+	else {alert("Max choix = 3";} 
 }
-document.getElementById("Br" + num).style.fill="red";
-}
-
-
 
 </script>
 
