@@ -1,4 +1,5 @@
 </html>
+	<meta charset="UTF-8"/>
 <head>
 <script>	
 
@@ -10,6 +11,9 @@ function lancer(){
 	if(document.getElementById("Br"+i).style.fill=="red") 
 	{ x++ ;} 
 	} 
+	for (let i = 1; i <= 6; i++) {
+	document.getElementById("Br" + i).style.stroke="gray";
+	}
 	var Val = Math.floor((Math.random() * 6)+1);
 	if(document.getElementById("Br"+Val).style.fill=="red"){
 		document.getElementById("Br"+Val).style.stroke="blue";
@@ -20,7 +24,7 @@ function lancer(){
 		 else if (x == 2) { winMoney += 100000 ;}
 		 else if (x == 3) { winMoney += 1000000;}
 		alert("Gagné " + winMoney + "$ !!!");}
-	document.getElementById("Br"+Val).style.stroke="blue";
+		document.getElementById("Br"+Val).style.stroke="blue";
 }
 	
 function chambre(num){
@@ -40,7 +44,7 @@ function chambre(num){
 function reset(){
 	for (let i = 1; i <= 6; i++) {
         document.getElementById("Br" + i).style.fill="gray";
-	document.getElementById("Br" + i).style.stroke="blue";
+	document.getElementById("Br" + i).style.stroke="gray";
 	}
 	winMoney = 0
 }
