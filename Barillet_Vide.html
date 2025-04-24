@@ -1,6 +1,122 @@
 </html>
 	<meta charset="UTF-8"/>
 <head>
+<style>
+body {
+        background: linear-gradient(40deg, purple, red, pink, yellow, green,  blue, white);
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 230px;
+    }
+    h1 {
+        font-family: "Helvetica";
+        font-weight: 800;
+        color: yellow;
+        text-shadow: 1px 1px black;
+    }
+    
+    svg {
+  background: radial-gradient(circle at center, #1a1a1a, #000);
+  border-radius: 50%;
+  box-shadow: 0 0 30px #ff00ff55;
+}
+
+circle {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Outer ring */
+circle:nth-of-type(1) {
+  stroke: #666;
+  stroke-width: 3;
+  fill: none;
+}
+
+/* Core pulse */
+circle:nth-of-type(8) {
+  fill: black;
+  stroke: white;
+  stroke-width: 3;
+  animation: pulse 2s infinite ease-in-out;
+  transform-origin: center;
+}
+
+/* Rooms base style */
+circle[id^="Br"] {
+  stroke: #555;
+  stroke-width: 3;
+  fill: yellow;
+  filter: drop-shadow(0 0 5px #ffffff66);
+}
+
+circle[id^="Br"]:hover {
+  transform: scale(1.1);
+  fill: #00ffe1;
+  stroke: #0ff;
+  filter: drop-shadow(0 0 10px #0ff);
+}
+
+/* Special styles for red-filled rooms */
+circle[id="Br1"],
+circle[id="Br6"] {
+  fill: #ff0044;
+}
+
+circle[id="Br6"] {
+  stroke: #0099ff;
+}
+    
+    h1 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  color: gold;
+  text-shadow: 2px 2px 2px black;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Buttons (style all by default) */
+button {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 5px auto;
+  display: block;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #eeeeee, #cccccc);
+  box-shadow: 0 4px 0 #999;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #ff5555, #cc0000);
+  color: white;
+  box-shadow: 0 4px 12px #ff000066;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 5px #00000088;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    r: 10;
+    stroke: white;
+  }
+  50% {
+    r: 13;
+    stroke: #ff00ff;
+  }
+}
+</style>
 <script>	
 
 var winMoney = 0
