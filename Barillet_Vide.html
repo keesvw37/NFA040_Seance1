@@ -12,7 +12,7 @@ function lancer(){
 	{ x++ ;} 
 	} 
 	for (let i = 1; i <= 6; i++) {
-	document.getElementById("Br" + i).style.stroke="gray";
+	document.getElementById("Br" + i).style.stroke="black";
 	}
 	var Val = Math.floor((Math.random() * 6)+1);
 	if(document.getElementById("Br"+Val).style.fill=="red"){
@@ -31,7 +31,7 @@ function lancer(){
 	
 function chambre(num){
 if(document.getElementById("Br"+num).style.fill=="red"){
-	document.getElementById("Br"+num).style.fill=="grey";}
+	document.getElementById("Br"+num).style.fill="grey";}
 else{
 	let x = 0
 	for (let i = 1; i <= 6 ; i++) {
@@ -50,7 +50,7 @@ else{
 function reset(){
 	for (let i = 1; i <= 6; i++) {
         document.getElementById("Br" + i).style.fill="gray";
-	document.getElementById("Br" + i).style.stroke="gray";
+	document.getElementById("Br" + i).style.stroke="black";
 	}
 	winMoney = 0
 }
