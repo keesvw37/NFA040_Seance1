@@ -1,23 +1,25 @@
 </html>
 <head>
 <script>	
+
+var winMoney = 0
+	
 function lancer(){
 	var Val = Math.floor((Math.random() * 6)+1);
-	var winMoney = 10000
-	if(document.getElementById("Br"+Val).style.fill=="red"){alert("Perdu");}
+	if(document.getElementById("Br"+Val).style.fill=="red"){
+		document.getElementById("Br"+Val).style.stroke="blue";
+		alert("Perdu");
+	}
 	else{
 		if (x == 1) { winMoney *= 1 ;}
 		 else if (x == 2) { winMoney *= 10 ;}
 		 else if (x == 3) { winMoney *= 100;}
 		alert("Gagné " + winMoney + "$ !!!");}
-	document.getElementById("Br"+Val).style.fill="blue";
+	document.getElementById("Br"+Val).style.stroke="blue";
 	}
 	
 function chambre(num){
 	let x = 0
-// 	  for (let i = 1; i <= 6; i++) {
-// document.getElementById("Br" + i).style.fill="gray";
-// }
 for (let i = 1; i <= 6 ; i++) {
 	if(document.getElementById("Br"+i).style.fill=="red") 
 	{ x++ ;} 
@@ -28,6 +30,12 @@ let userMSG = "chambre: " + num + ", Nombre des chambres choisi: " + (x+1) ;
 alert(userMSG) ;
 	}	else {alert("Max choix = 3");} 
 	
+}
+
+function reset(){
+	for (let i = 1; i <= 6; i++) {
+        document.getElementById("Br" + i).style.fill="gray";
+	}
 }
 
 </script>
@@ -49,6 +57,7 @@ alert(userMSG) ;
 	</svg>	
 	
 	<button onclick="lancer()">Jouer</button>
+	<button onclick="reset()">Reset</button>
 	
 	
 	
