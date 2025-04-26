@@ -25,10 +25,9 @@ function bouger(){
 		   var ballBlueX = parseInt(document.getElementById('ballBlue').getAttribute("cx"));
 		   var ballBlueY = parseInt(document.getElementById('ballBlue').getAttribute("cy"));
 
-  		  setInterval(() => {
-   			ballBlueX -= 15;
-    			document.getElementById('ballBlue').setAttribute("cx", ballBlueX);
- 			}, 500);
+  		   ballBlueX -= 15;
+                    	if(ballBlueX<15){ballBlueX=15;}
+			document.getElementById('ballBlue').setAttribute("cx", ballBlueX);
 
 }
 
