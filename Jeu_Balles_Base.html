@@ -21,9 +21,15 @@ function principale(){
 }
 
 function bouger(){
-
 	//Code à créer pour faire bouger la boule enemy
-	
+		   var ballBlueX = parseInt(document.getElementById('ballBlue').getAttribute("cx"));
+		   var ballBlueY = parseInt(document.getElementById('ballBlue').getAttribute("cy"));
+
+  		  setInterval(() => {
+   			ballBlueX -= 15;
+    			document.getElementById('ballBlue').setAttribute("cx", ballBlueX);
+ 			}, 500);
+
 }
 
 
