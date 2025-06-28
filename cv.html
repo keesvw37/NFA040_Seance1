@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <title>Mon CV en Ligne</title>
   <style>
-    /* Base styling */
+    /* Base Styling for CV */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 40px auto;
       max-width: 900px;
-      background-color: #f8f9fa;
-      color: #2f2f2f;
+      background-color: #e9ecf0;
+      color: #1c1f23;
       line-height: 1.6;
     }
 
     h1 {
       text-align: center;
-      color: #34495e;
+      color: #2c3e50;
       margin-bottom: 40px;
     }
 
@@ -25,18 +25,18 @@
     }
 
     .section-title {
-      background-color: #e3eaf2;
-      color: #34495e;
+      background-color: #324a5e;
+      color: #f0f3f7;
       padding: 12px 18px;
       font-size: 1.3em;
       font-weight: 600;
       border-radius: 6px 6px 0 0;
-      border-bottom: 1px solid #d1d9e0;
+      border-bottom: 2px solid #2a3b4c;
     }
 
     .section-content {
       background-color: #ffffff;
-      border: 1px solid #d1d9e0;
+      border: 1px solid #c4cfdc;
       border-top: none;
       padding: 20px;
       border-radius: 0 0 6px 6px;
@@ -54,55 +54,66 @@
     h3.job-title {
       margin-top: 25px;
       margin-bottom: 10px;
-      color: #2c3e50;
+      color: #2b3e50;
       font-size: 1.1em;
     }
 
-    /* Distinct styling for the form section */
+    /* Contact Form: distinct styling */
+    .form-section {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #fefefe;
+    }
+
     .form-section .section-title {
-      background-color: #f1f1f1;
-      color: #333;
+      background-color: #000;
+      color: #fff;
+      border: none;
     }
 
     .form-section .section-content {
-      background-color: #f9f9f9;
-      border-color: #ccc;
+      background-color: #fff;
+      border: 2px solid #000;
+      padding: 25px;
+      border-radius: 0 0 6px 6px;
     }
 
-    form label {
+    .form-section label {
       display: block;
       margin-bottom: 6px;
       font-weight: bold;
+      color: #111;
     }
 
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
+    .form-section input[type="text"],
+    .form-section input[type="email"],
+    .form-section textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-bottom: 20px;
-      border: 1px solid #aaa;
-      border-radius: 4px;
+      border: 2px solid #000;
+      background-color: #fff;
+      color: #000;
+      font-family: inherit;
       font-size: 1em;
     }
 
-    form textarea {
+    .form-section textarea {
       resize: vertical;
       height: 120px;
     }
 
-    form button {
-      background-color: #2c3e50;
-      color: white;
+    .form-section button {
+      background-color: #000;
+      color: #fff;
       border: none;
       padding: 12px 25px;
       font-size: 1em;
-      border-radius: 5px;
       cursor: pointer;
+      font-family: inherit;
     }
 
-    form button:hover {
-      background-color: #3e4f61;
+    .form-section button:hover {
+      background-color: #333;
     }
 
     @media (max-width: 600px) {
@@ -140,8 +151,9 @@
   <div class="section">
     <div class="section-title">Expérience Professionnelle</div>
     <div class="section-content">
-      <h3 class="job-title">Consultant Mainframe [2022 - présent] :</h3>
+      <h3 class="job-title">Consultant Mainframe 2022 - présent :</h3>
       <ul>
+        <li>Programmeur/Consultant Mainframe chez Aubay pour Crédit Agricole Personal Finance & Mobility.</li>
         <li>Développement de services complexes : simulateurs, recherches, transactions bancaires.</li>
         <li>Rédaction de documentations techniques à destination des développeurs.</li>
         <li>Gestion des incidents batch et assistance technique quotidienne.</li>
@@ -149,20 +161,20 @@
         <li>Débogages complexes et amélioration de la stabilité des programmes.</li>
       </ul>
 
-      <h3 class="job-title">Responsable Service Client [2018 - 2022] :</h3>
+      <h3 class="job-title">Responsable Service Client 2018 - 2022 :</h3>
       <ul>
-        <li>Expérience en restauration, bars à cocktails et domaines viticoles.</li>
+        <li>Expérience dans la restauration, bars à cocktails, domaines viticoles.</li>
         <li>Management d’une équipe de 4 personnes chez Peter Teakle Wines.</li>
-        <li>Réduction des coûts de 10 % grâce à une meilleure gestion des stocks.</li>
-        <li>Animation d’ateliers qualité, augmentation de la satisfaction client de 12 %.</li>
+        <li>Réduction des coûts de 10 % par une meilleure gestion des stocks.</li>
+        <li>Animation d’ateliers qualité, hausse de satisfaction client de 12 %.</li>
       </ul>
 
-      <h3 class="job-title">Recherche universitaire en photovoltaïque [2017 - 2018] :</h3>
+      <h3 class="job-title">Recherche universitaire en photovoltaïque 2017 - 2018 :</h3>
       <ul>
-        <li>Étude sur le SnO₂ pour cellules solaires à pérovskite à usage commercial.</li>
+        <li>Étude sur le SnO₂ pour cellules solaires à pérovskite.</li>
         <li>Présentation scientifique primée du projet de recherche.</li>
         <li>Optimisation de l'efficacité énergétique et réduction de l'hystérésis.</li>
-        <li>Utilisation de nombreuses techniques : UV/Vis, AFM, DRX, voltammétrie.</li>
+        <li>Techniques utilisées : UV/Vis, AFM, DRX, voltammétrie cyclique.</li>
       </ul>
     </div>
   </div>
