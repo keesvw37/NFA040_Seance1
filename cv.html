@@ -1,198 +1,221 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mon CV en Ligne</title>
-    <style>
-        /* Base styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 40px auto;
-            max-width: 900px;
-            background-color: #f4f6f8;
-            color: #2c3e50;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8">
+  <title>Mon CV en Ligne</title>
+  <style>
+    /* Base styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px auto;
+      max-width: 900px;
+      background-color: #f8f9fa;
+      color: #2f2f2f;
+      line-height: 1.6;
+    }
 
-        h1 {
-            text-align: center;
-            color: #1a237e;
-            margin-bottom: 40px;
-        }
+    h1 {
+      text-align: center;
+      color: #34495e;
+      margin-bottom: 40px;
+    }
 
-        .section {
-            margin-bottom: 40px;
-        }
+    .section {
+      margin-bottom: 40px;
+    }
 
-        .section-title {
-            background-color: #1a237e;
-            color: white;
-            padding: 10px 15px;
-            font-size: 1.3em;
-            border-radius: 5px 5px 0 0;
-        }
+    .section-title {
+      background-color: #e3eaf2;
+      color: #34495e;
+      padding: 12px 18px;
+      font-size: 1.3em;
+      font-weight: 600;
+      border-radius: 6px 6px 0 0;
+      border-bottom: 1px solid #d1d9e0;
+    }
 
-        .section-content {
-            background-color: #ffffff;
-            border: 1px solid #ccc;
-            border-top: none;
-            padding: 20px;
-            border-radius: 0 0 5px 5px;
-        }
+    .section-content {
+      background-color: #ffffff;
+      border: 1px solid #d1d9e0;
+      border-top: none;
+      padding: 20px;
+      border-radius: 0 0 6px 6px;
+    }
 
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
+    ul {
+      margin: 0;
+      padding-left: 25px;
+    }
 
-        /* Contact Form */
-        form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
+    li {
+      margin-bottom: 10px;
+    }
 
-        form input[type="text"],
-        form input[type="email"],
-        form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #bbb;
-            border-radius: 4px;
-            font-size: 1em;
-        }
+    h3.job-title {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #2c3e50;
+      font-size: 1.1em;
+    }
 
-        form textarea {
-            resize: vertical;
-            height: 120px;
-        }
+    /* Distinct styling for the form section */
+    .form-section .section-title {
+      background-color: #f1f1f1;
+      color: #333;
+    }
 
-        form button {
-            background-color: #1a237e;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            font-size: 1em;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    .form-section .section-content {
+      background-color: #f9f9f9;
+      border-color: #ccc;
+    }
 
-        form button:hover {
-            background-color: #3949ab;
-        }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
 
-        /* Responsive tweaks */
-        @media (max-width: 600px) {
-            body {
-                margin: 20px;
-            }
-        }
-    </style>
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    form button {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #3e4f61;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        margin: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Kees van Winden</h1>
+  <h1>Kees van Winden</h1>
 
-    <!-- Informations personnelles -->
-    <div class="section">
-        <div class="section-title">Informations Personnelles</div>
-        <div class="section-content">
-            <p><strong>Nom :</strong> van Winden </p>
-            <p><strong>Prénom :</strong> Kees </p>
-            <p><strong>Adresse :</strong> 999 Rue du Vent</p>
-            <p><strong>Email :</strong> keesvw@gmail.com</p>
-            <p><strong>Téléphone :</strong> 07 88 70 56 85</p>
-        </div>
+  <!-- Informations personnelles -->
+  <div class="section">
+    <div class="section-title">Informations Personnelles</div>
+    <div class="section-content">
+      <p><strong>Nom :</strong> van Winden</p>
+      <p><strong>Prénom :</strong> Kees</p>
+      <p><strong>Adresse :</strong> 999 Rue du Vent</p>
+      <p><strong>Email :</strong> keesvw@gmail.com</p>
+      <p><strong>Téléphone :</strong> 07 88 70 56 85</p>
     </div>
+  </div>
 
-    <!-- Objectif personnel -->
-    <div class="section">
-        <div class="section-title">Objectif Personnel</div>
-        <div class="section-content">
-            <p>Développeur Mainframe souhaitant élargir ses compétences et ses connaissances dans le secteur bancaire, intéressé par les projets de migration visant à faire évoluer les systèmes hérités vers des environnements modernes.</p>
-        </div>
+  <!-- Objectif personnel -->
+  <div class="section">
+    <div class="section-title">Objectif Personnel</div>
+    <div class="section-content">
+      <p>Développeur Mainframe souhaitant élargir ses compétences et ses connaissances dans le secteur bancaire, intéressé par les projets de migration visant à faire évoluer les systèmes hérités vers des environnements modernes.</p>
     </div>
+  </div>
 
-    <!-- Expérience professionnelle -->
-    <div class="section">
-        <div class="section-title">Expérience Professionnelle</div>
-        <div class="section-content">
-            <ul>
-                <li><strong>Consultant Mainframe 2022 - présent:</strong><br>
-                Programmeur/Consultant Mainframe chez Aubay (Centre de services pour CAPFM – Crédit Agricole Personal Finance & Mobility, anciennement CACF).<br><br>
-                - Développement de nombreux programmes pour les services de prêt de CACF, incluant des fonctions de recherche complexes, des simulateurs de remboursement, et des services de transaction côté conseiller<br>
-                - Conception de programmes basés sur les besoins bancaires, accompagnée de la rédaction de documentations techniques et de code à destination des développeurs<br>
-                - Gestion quotidienne des incidents de production pour les traitements batch, les anomalies de programmes, et l’assistance interne à la banque<br>
-                - Mise en œuvre des demandes clients pour les corrections de produits via la gestion de requêtes SQL et les ajustements comptables<br>
-                - Réalisation de débogages complexes et de tests approfondis pour améliorer les programmes existants et corriger les anomalies récurrentes</li>
-                <li><strong>Responsable Service Client 2018 - 2022 :</strong><br>
-                Plus de 3 ans d’expérience dans le Secteur Restauration & Vins, notamment dans des restaurants gastronomiques, bars à cocktails et domaines viticoles. Occupation de divers postes en front-office, allant de rôles occasionnels à des responsabilités managériales.<br><br>
-                - Encadrement d’une équipe de 4 personnes chez Peter Teakle Wines afin d’atteindre régulièrement les objectifs journaliers de vente grâce à l’animation de dégustations de vin<br>
-                - Réduction des coûts d’inventaire hebdomadaires de 10 % en mettant en place une gestion stratégique des stocks et des procédures anti-gaspillage<br>
-                - Animation d’ateliers collaboratifs sur les protocoles de service et les normes d’hygiène, entraînant une hausse de 12 % de la satisfaction client</li>
-                <li><strong>Recherche universitaire en photovoltaïque 2017 - 2018  :</strong><br>
-                Recherche menée en collaboration avec une équipe doctorale sur une technologie photovoltaïque innovante et durable. Étude de faisabilité d’un dépôt chimique de l’oxyde d’étain comme matériau de transport d’électrons dans une cellule solaire à pérovskite MAPI à architecture planaire, en vue d’une application commerciale.<br><br>
-                - Présentation des résultats de recherche en langage scientifique et vulgarisé, obtenant la meilleure distinction académique pour le projet<br>
-                - Approfondissement des connaissances sur les matériaux et procédés de production durable<br>
-                - Analyse du cycle de vie et de l’intensité carbone pour évaluer l’impact environnemental<br>
-                - Identification de méthodes de fabrication réduisant l’hystérésis de 20 %<br>
-                - Atteinte d’un rendement de 6,66 % avec des cellules à base de SnO₂ et identification de pistes d’optimisation<br>
-                - Utilisation de diverses méthodes de caractérisation : spectroscopie UV/Vis, microscopie à force atomique, diffraction des rayons X sur poudre, voltammétrie cyclique
-                </li>
-            </ul>
-        </div>
+  <!-- Expérience professionnelle -->
+  <div class="section">
+    <div class="section-title">Expérience Professionnelle</div>
+    <div class="section-content">
+      <h3 class="job-title">Consultant Mainframe [2022 - présent] :</h3>
+      <ul>
+        <li>Développement de services complexes : simulateurs, recherches, transactions bancaires.</li>
+        <li>Rédaction de documentations techniques à destination des développeurs.</li>
+        <li>Gestion des incidents batch et assistance technique quotidienne.</li>
+        <li>Optimisation SQL et ajustements comptables.</li>
+        <li>Débogages complexes et amélioration de la stabilité des programmes.</li>
+      </ul>
+
+      <h3 class="job-title">Responsable Service Client [2018 - 2022] :</h3>
+      <ul>
+        <li>Expérience en restauration, bars à cocktails et domaines viticoles.</li>
+        <li>Management d’une équipe de 4 personnes chez Peter Teakle Wines.</li>
+        <li>Réduction des coûts de 10 % grâce à une meilleure gestion des stocks.</li>
+        <li>Animation d’ateliers qualité, augmentation de la satisfaction client de 12 %.</li>
+      </ul>
+
+      <h3 class="job-title">Recherche universitaire en photovoltaïque [2017 - 2018] :</h3>
+      <ul>
+        <li>Étude sur le SnO₂ pour cellules solaires à pérovskite à usage commercial.</li>
+        <li>Présentation scientifique primée du projet de recherche.</li>
+        <li>Optimisation de l'efficacité énergétique et réduction de l'hystérésis.</li>
+        <li>Utilisation de nombreuses techniques : UV/Vis, AFM, DRX, voltammétrie.</li>
+      </ul>
     </div>
+  </div>
 
-    <!-- Formation académique -->
-    <div class="section">
-        <div class="section-title">Formation Académique</div>
-        <div class="section-content">
-            <p><strong>Dernier diplôme obtenu [2018] :</strong> Msci: Masters in Chemistry with Management</p>
-        </div>
+  <!-- Formation académique -->
+  <div class="section">
+    <div class="section-title">Formation Académique</div>
+    <div class="section-content">
+      <p><strong>Dernier diplôme obtenu [2018] :</strong> Msci: Masters in Chemistry with Management</p>
     </div>
+  </div>
 
-    <!-- Compétences -->
-    <div class="section">
-        <div class="section-title">Compétences</div>
-        <div class="section-content">
-            <ul>
-                <li>Langues: Français, Anglais, Allemand, Japonais, néerlandais</li>
-                <li>Communication Interpersonelles</li>
-                <li>Adaptabilité</li>
-            </ul>
-        </div>
+  <!-- Compétences -->
+  <div class="section">
+    <div class="section-title">Compétences</div>
+    <div class="section-content">
+      <ul>
+        <li>Langues: Français, Anglais, Allemand, Japonais, Néerlandais</li>
+        <li>Communication interpersonnelle</li>
+        <li>Adaptabilité</li>
+      </ul>
     </div>
+  </div>
 
-    <!-- Loisirs -->
-    <div class="section">
-        <div class="section-title">Centres d'Intérêt</div>
-        <div class="section-content">
-            <ul>
-                <li>Escalade </li>
-                <li>Plongée sous-marine</li>
-            </ul>
-        </div>
+  <!-- Loisirs -->
+  <div class="section">
+    <div class="section-title">Centres d'Intérêt</div>
+    <div class="section-content">
+      <ul>
+        <li>Escalade</li>
+        <li>Plongée sous-marine</li>
+      </ul>
     </div>
+  </div>
 
-    <!-- Formulaire de contact -->
-    <div class="section">
-        <div class="section-title">Contactez-moi</div>
-        <div class="section-content">
-            <form>
-                <label for="fullname">Nom complet</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Votre nom complet">
+  <!-- Formulaire de contact -->
+  <div class="section form-section">
+    <div class="section-title">Contactez-moi</div>
+    <div class="section-content">
+      <form>
+        <label for="fullname">Nom complet</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Votre nom complet">
 
-                <label for="email">Adresse email</label>
-                <input type="email" id="email" name="email" placeholder="Votre email">
+        <label for="email">Adresse email</label>
+        <input type="email" id="email" name="email" placeholder="Votre email">
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Votre message..."></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message..."></textarea>
 
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
+        <button type="submit">Envoyer</button>
+      </form>
     </div>
+  </div>
 
 </body>
 </html>
