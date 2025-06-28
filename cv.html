@@ -1,55 +1,106 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-<meta charset="UTF-8"/>
-
+    <meta charset="UTF-8">
+    <title>Mon CV en Ligne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+        .section-content {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-	<h1>Dresseur de pokémon</h1>
 
-<p>Le champs marqués d'une * sont obligatoires.</p>
-	
-<form action="#">
-<fieldset>
-<legend>Nouveau dresseur</legend>
-<p>Nom * </p>
-<!-- <p><input name="A" type="Text" value="Nom"/></p> -->
-<p><input name="A" type="Text"></p> 
-<p>Description</p>
-<p>
-<!--<input name="B" type="Text"/> -->
-<textarea name="B" type="Text" rows="3" cols="30"/> </textarea>
-</p> 
-<!-- <p><input name="B" type="Text" value="Description"/></p> -->
-<p>Équipe </p>
-<p><input name="C" type="radio" value="Rouge"/> Rouge</p>
-<p><input name="C" type="radio" value="Jaune"/> Jaune</p>
-<p><input name="C" type="radio" value="Bleu"/> Bleu</p>
+    <h1>Curriculum Vitae</h1>
 
-<p>Anniversaire *</p>
+    <!-- Informations personnelles -->
+    <div class="section">
+        <div class="section-title">Informations Personnelles</div>
+        <div class="section-content">
+            <p><strong>Nom :</strong> [Votre nom]</p>
+            <p><strong>Prénom :</strong> [Votre prénom]</p>
+            <p><strong>Adresse :</strong> [Votre adresse]</p>
+            <p><strong>Email :</strong> [Votre email]</p>
+            <p><strong>Téléphone :</strong> [Votre numéro de téléphone]</p>
+        </div>
+    </div>
 
-<!-- 
-<p>
-<select name="G" multiple>
-	<option>Pain</option>
-	<option>Citron</option>
-	<option>Orange</option>
-</select>
-</p>
--->
-<p>
-<textarea rows="1" cols="20" name="H">
-jj/mm/aaaa
-</textarea>
+    <!-- Objectif personnel -->
+    <div class="section">
+        <div class="section-title">Objectif Personnel</div>
+        <div class="section-content">
+            <p>[Votre texte d'objectif personnel ici]</p>
+        </div>
+    </div>
 
-</p>
-<p><input type="submit" value="Envoyer" />
-<!-- <input type="reset"/> -->
-</p>
+    <!-- Expérience professionnelle -->
+    <div class="section">
+        <div class="section-title">Expérience Professionnelle</div>
+        <div class="section-content">
+            <ul>
+                <li><strong>Poste 1 :</strong> [Entreprise et description]</li>
+                <li><strong>Poste 2 :</strong> [Entreprise et description]</li>
+                <li><strong>Poste 3 :</strong> [Entreprise et description]</li>
+            </ul>
+        </div>
+    </div>
 
-</fieldset>
+    <!-- Parcours académique -->
+    <div class="section">
+        <div class="section-title">Parcours Académique</div>
+        <div class="section-content">
+            <p><strong>Dernier diplôme obtenu :</strong> [Nom du diplôme]</p>
+        </div>
+    </div>
 
+    <!-- Compétences -->
+    <div class="section">
+        <div class="section-title">Compétences</div>
+        <div class="section-content">
+            <ul>
+                <li>[Compétence 1]</li>
+                <li>[Compétence 2]</li>
+                <li>[Compétence 3]</li>
+            </ul>
+        </div>
+    </div>
 
-</form>
+    <!-- Centres d'intérêt -->
+    <div class="section">
+        <div class="section-title">Centres d'Intérêt</div>
+        <div class="section-content">
+            <ul>
+                <li>[Loisir 1]</li>
+                <li>[Loisir 2]</li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>
